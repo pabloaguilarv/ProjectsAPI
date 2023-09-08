@@ -37,7 +37,7 @@ class ShowProjectSimple(BaseModel):
 class ShowTeamMember(BaseModel):
     name:str
     role:str
-    project_name: ShowProjectSimple
+    project: ShowProjectSimple
 
     class Config():
         orm_mode=True
